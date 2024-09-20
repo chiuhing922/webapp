@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Jumbotron Template for Bootstrap</title>
+    <title>Sonar Product Demo</title>
 
 
     <!-- Custom styles for this template -->
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Devops-training</a>
+            <a class="navbar-brand" href="#">My Hello World Page</a>
         </div>
         <div class="navbar-collapse collapse">
             <form class="navbar-form navbar-right" role="form">
@@ -50,8 +50,9 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Hello</h1>
-        <p>This is from Dev Environment </p>
+        <h1>Clean your AI
+            generated code</h1>
+        <p>AI generated or written by humans, Sonar’s Clean Code Solutions cover your code quality needs, improving code reliability, maintainability, and security</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
@@ -60,20 +61,28 @@
     <!-- Example row of columns -->
      <div class="row">
         <div class="col-md-4">
-            <h2>Devops</h2>
-            <p>DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.</p>
+            <h2>SonarQube</h2>
+            <p>SonarQube is an on-premise analysis tool designed to detect coding issues in 30+ languages, frameworks, and IaC platforms. By integrating directly with your CI pipeline or on one of our supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues on each merge/pull request. 
+
+                As a core element of the Sonar solution, SonarQube completes the analysis loop to help you deliver clean code that meets high-quality standards.</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
     </div>
+
+
     <div class="row">
         <div class="col-md-4">
-            <h2>Jenkins</h2>
-            <p>Jenkins is a free and open source automation server. Jenkins helps to automate the non-human part of the software development process, with continuous integration and facilitating technical aspects of continuous delivery</p>
+            <h2>SonarCloud</h2>
+            <p>SonarCloud is a Software-as-a-Service (SaaS) code analysis tool designed to detect coding issues in 30+ languages, frameworks, and IaC platforms. By integrating directly with your CI pipeline or one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues, on each merge/pull request.
+
+                SonarCloud extends your DevOps experience by performing automated code checks within minutes. Here’s how to get started using SonarCloud:</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
-            <h2>Maven</h2>
-            <p>Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages.</p>
+            <h2>SonarLint</h2>
+            <p>SonarLint is a free and open-source IDE plugin for static code analysis brought to you by Sonar. It’s your first line of defense, designed to detect coding issues in real-time for 25 languages, frameworks, and IaC platforms. Your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues. It’s possible to analyze more rules, assign issues, share quality profiles, and more, with your team when running in connected mode with SonarQube or SonarCloud. See the Connected Mode benefits list for more details.
+
+                Sonar’s IDE extensions are available for IntelliJ (and other JetBrains IDEs), Visual Studio, VS Code, and Eclipse, and can be installed directly from your IDE's plugin marketplace. SonarLint leverages over 5,000 language-specific Clean Code rules.</p>
             <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
 <!--         <div class="col-md-4">
@@ -83,6 +92,8 @@
         </div> -->
     </div>
 
+
+    
     <hr>
 
     <footer>
