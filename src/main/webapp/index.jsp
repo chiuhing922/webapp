@@ -10,7 +10,6 @@
 
     <title>Sonar Product Demo</title>
 
-
     <!-- Custom styles for this template -->
     <link href="jumbotron.css" rel="stylesheet">
 
