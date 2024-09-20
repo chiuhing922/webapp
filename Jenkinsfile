@@ -15,7 +15,7 @@ pipeline{
         stages{
 
 
-              stage('Quality Gate Statuc Check'){
+              stage('Quality Gate Status Check'){
 
                agent {
                 docker {
@@ -25,7 +25,7 @@ pipeline{
             }
                   steps{
                       script{
-                      withSonarQubeEnv('sonarserver') { 
+                      withSonarQubeEnv('SonarQube Server') { 
                       sh "mvn sonar:sonar"
                        }
                       timeout(time: 1, unit: 'HOURS') {
