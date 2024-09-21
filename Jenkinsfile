@@ -10,8 +10,6 @@ node {
     }
   }
   stage('Deploy to Tomcat') {
-        steps {
         sh "/var/jenkins_home/deploy_war.sh"
-        }
   }
 }
