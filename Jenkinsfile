@@ -17,7 +17,7 @@ node {
       sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=webapp-pipeline -Dsonar.projectName='webapp-pipeline'"
     }
   }
-  stage('Deploy to Tomcat') {
+  '''stage('Deploy to Tomcat') {
         steps {
         sh 
           ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "rm -rf $ROOT_WAR_LOCATION/WebApp; rm -f $ROOT_WAR_LOCATION/WebApp.war"
@@ -25,5 +25,5 @@ node {
           ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "chown $TOMCAT_CREDS_USR:$TOMCAT_CREDS_USR $ROOT_WAR_LOCATION/WebApp.war"
           ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "/usr/local/tomcat/bin/catalina.sh start"
         }
-  }
+  }'''
 }
