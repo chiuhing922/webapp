@@ -10,6 +10,7 @@ node {
     WAR_FILE="WebApp.war"
   }
 
+  
   stage('SonarQube Analysis') {
     def mvn = tool 'maven';
     withSonarQubeEnv() {
