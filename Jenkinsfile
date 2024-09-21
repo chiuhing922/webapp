@@ -2,6 +2,14 @@ node {
   stage('SCM') {
     checkout scm
   }
+  environment {
+    TOMCAT_CREDS=credentials('tomcat-ssh-private-key')
+    TOMCAT_SERVER="70af36e83265"
+    ROOT_WAR_LOCATION="/usr/local/tomcat/webapps"
+    LOCAL_WAR_DIR="/var/jenkins_home/workspace/webapp-pipeline/target"
+    WAR_FILE="WebApp.war"
+  }
+
 
   stage('SonarQube Analysis') {
     def mvn = tool 'maven';
@@ -10,17 +18,12 @@ node {
     }
   }
   stage('Deploy to Tomcat') {
-        def cred = credentials('tomcat-ssh-private-key')
-        def user = "tomcat"
-        def tomcat_server = "70af36e83265"
-        def remote_war_path = "/usr/local/tomcat/webapps"
-        def local_war_path = "/var/jenkins_home/workspace/webapp-pipeline/target"
-        def war_file="WebApp.war"
+        steps {
         sh 
-          ssh -i ${cred} ${user}@{tomcat_server} "rm -rf {remote_war_path}/WebApp; rm -f {remote_war_path}/WebApp.war"
-          scp -i ${cred} {local_war_path}/{war_file} ${user}@{tomcat_server}:{remote_war_path}/WebApp.war
-          ssh -i ${cred} ${user}@{tomcat_server} "chown ${user}:${user} {remote_war_path}/WebApp.war"
-          ssh -i ${cred} ${user}@{tomcat_server} "/usr/local/tomcat/bin/catalina.sh start"
-        
+          ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "rm -rf $ROOT_WAR_LOCATION/WebApp; rm -f $ROOT_WAR_LOCATION/WebApp.war"
+          scp -i $TOMCAT_CREDS $LOCAL_WAR_DIR/$WAR_FILE $TOMCAT_CREDS_USR@$TOMCAT_SERVER:$ROOT_WAR_LOCATION/WebApp.war
+          ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "chown $TOMCAT_CREDS_USR:$TOMCAT_CREDS_USR $ROOT_WAR_LOCATION/WebApp.war"
+          ssh -i $TOMCAT_CREDS $TOMCAT_CREDS_USR@$TOMCAT_SERVER "/usr/local/tomcat/bin/catalina.sh start"
+        }
   }
 }
