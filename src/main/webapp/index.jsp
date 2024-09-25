@@ -92,28 +92,6 @@
         </div> -->
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>SonarCloud</h2>
-            <p>SonarCloud is a Software-as-a-Service (SaaS) code analysis tool designed to detect coding issues in 30+ languages, frameworks, and IaC platforms. By integrating directly with your CI pipeline or one of the supported DevOps platforms, your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues, on each merge/pull request.
-
-                SonarCloud extends your DevOps experience by performing automated code checks within minutes. Here’s how to get started using SonarCloud:</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>SonarLint</h2>
-            <p>SonarLint is a free and open-source IDE plugin for static code analysis brought to you by Sonar. It’s your first line of defense, designed to detect coding issues in real-time for 25 languages, frameworks, and IaC platforms. Your code is checked against an extensive set of rules that cover many attributes of code, such as maintainability, reliability, and security issues. It’s possible to analyze more rules, assign issues, share quality profiles, and more, with your team when running in connected mode with SonarQube or SonarCloud. See the Connected Mode benefits list for more details.
-
-                Sonar’s IDE extensions are available for IntelliJ (and other JetBrains IDEs), Visual Studio, VS Code, and Eclipse, and can be installed directly from your IDE's plugin marketplace. SonarLint leverages over 5,000 language-specific Clean Code rules.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-<!--         <div class="col-md-4">
-            <h2>Docker</h2>
-            <p>Docker is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div> -->
-    </div>
-
     
     <hr>
 
