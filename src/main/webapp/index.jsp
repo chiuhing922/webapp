@@ -50,7 +50,7 @@
 <div class="jumbotron">
     <div class="container">
         <h1>I love SonarQube</h1>
-        <p>AI generated or written by humans, Sonar’s Clean Code Solutions cover your code quality needs, improving code reliability, maintainability, and security</p>
+        <p>AI generated or written by humans, Sonar's Clean Code Solutions cover your code quality needs, improving code reliability, maintainability, and security</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
