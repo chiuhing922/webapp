@@ -49,13 +49,11 @@
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
-        <h1>Clean your AI
-            generated code</h1>
+        <h1>I love SonarQube</h1>
         <p>AI generated or written by humans, Sonar’s Clean Code Solutions cover your code quality needs, improving code reliability, maintainability, and security</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
-
 
 <div class="container">
     <!-- Example row of columns -->
